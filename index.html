@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/app.css">
+    <title>Application Form for ID</title>
+</head>
+<body>
+    <center h3>Employee ID card Form</h3></center>
+    <form name=validation>
+        <div class="form_group">
+            <label for="firstName">FirstName</label>
+            <input type="text" id=firstName>
+            <span id=errorMesssageForFirstName>Please enter the first name</span>
+        </div><br>
+        <div class="form_group">
+            <label for="fullName">FullName</label>
+            <input type="text" id=fullName>
+            <span id=errorMesssageForFullName>Please enter the full name</span>
+        </div><br>
+        <div>
+            <label for="designation">Designation</label>
+            <select id="designation" required>
+                <option value="" selected Disabled Here>Choose Here</option>
+                <option value="Associate">Associate Engineer</option>
+                <option value="Developer">Developer</option>
+                <option value="Tester">Tester</option>
+                <option value="Reviewer">Reviewer</option>
+            </select>
+            <span class="span-for-errors" id="errorMessageForDesignation">Choose your Designation</span><br/><br/> 
+        </div>
+        <div>
+            <label for="employeeNumber">Employee Number</label>
+            <input type="text" id="employeeNumber">
+            <span id="errorMessageForEmployeeNumber">Enter valid employee number</span>
+
+        </div><br>
+        <div>
+            <label for="bloodgroup">Blood Group</label>
+            <select id="bloodgroup1" required>
+                    <option value="" selected Disabled Here>Choose Here</option>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="O">O</option>
+                    <option value="AB">AB</option>
+                </select>
+                <select id="bloodgroup2" required>
+                        <option value="" selected Disabled Here>Choose Here</option>
+                        <option value="positive">+ve</option>
+                        <option value="negative">-Ve</option>
+                </select>
+                <span id="errorMessageForBloodGroup">Choose your BloodGroup</span><br/><br/> 
+        </div>
+        <div>
+                <label for="reasonsForIssue">Reasons for Issue</label>
+                <select id="reasonsForIssue" required>
+                    <option value="" selected Disabled Here>Choose Here</option>
+                    <option value="newEmployee">Associate Engineer</option>
+                    <option value="lost">Developer</option>
+                    <option value="defaced">Tester</option>
+                    <option value="conversion">Reviewer</option>
+                    <option value="designation change">Designaion Change</option>
+
+                </select>
+                <span id="errorMessageForReasonsForIssue">Select the reason</span><br/><br/> 
+            </div>
+            <div>
+                    <label for="email">Email ID(Virtusa)</label>
+                    <input type="text" id="email" required>
+                    <span id="errorMessageEmailID">Enter your Email Id</span><br/><br/> 
+
+            </div><br>
+            <div>
+                    <label for="mobile">Employee Mobile Number</label>
+                    <input type="text" id="mobile" required>
+                  <span id="errorMessageForEmployeeMobileNumber">Enter your mobile number</span><br/><br/> 
+                    
+            </div><br>
+            <div>
+                    <label for="emergency">Emergency Contact Number</label>
+                    <input type="text" id="emergency" required>
+                  <span id="errorMessageForEmployeeEmergencyContactNumber">Enter your emergency mobile number</span><br/><br/> 
+                    
+            </div>
+        <div>
+            <button type="button" onclick="addDetails()">Add Details</button>
+        </div>
+    </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+   
+   
+</body>
+</html>
